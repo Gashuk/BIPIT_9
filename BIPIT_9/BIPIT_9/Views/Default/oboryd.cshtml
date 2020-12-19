@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "oboryd";
+}
+
+<h2>Оборудование</h2>
+<div>
+    <table>
+        <tr>
+            <td>ID</td>
+            <td>Модель оборудования</td>
+            <td>Фирма оборудование</td>
+        </tr>
+        @foreach (var s in ViewBag.Oboryds)
+        {
+        <tr>
+            <td>@s.Id</td>
+            <td>@s.Model_oboryd</td>
+            <td>@s.Firma_oboryd</td>
+        </tr>
+        }
+    </table>
+</div>

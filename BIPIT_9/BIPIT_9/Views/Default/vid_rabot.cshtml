@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "vid_rabot";
+}
+
+<h2>Виды работ</h2>
+<div>
+    <table>
+        <tr>
+            <td>ID</td>
+            <td>Название работы</td>
+            <td>Цена работы</td>
+        </tr>
+        @foreach (var s in ViewBag.Vid_rabot)
+        {
+            <tr>
+                <td>@s.Id</td>
+                <td>@s.Name_vid_rabot</td>
+                <td>@s.Cost_vid_rabot</td>
+            </tr>
+        }
+    </table>
+</div>
